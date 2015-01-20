@@ -1,0 +1,92 @@
+html { 
+	background: url('../img/midday-mountains.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+body {
+	background:none;
+	background:transparent;
+	font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+.overlay {
+	background-color: rgba(44,62,80 , 0.6 );
+	background-image: url('../img/pattern.png');
+	background-position: center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+}
+
+.clock-item .inner {
+	height: 0px;
+	padding-bottom: 100%;
+	position: relative;	
+	width: 100%;
+}
+
+.clock-canvas {
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: 50%;
+	height: 0px;
+	padding-bottom: 100%;
+}
+
+.text {
+	color: #fff;	
+	font-size: 30px;
+	font-weight: bold;	
+	margin-top: -50px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	width: 100%;
+}
+
+.text .val {
+	font-size: 50px;
+}
+
+.text .type-time {
+	font-size: 20px;
+}
+
+.header {
+	color:#fff;
+	margin-bottom:25px;
+}
+
+.quote {
+	color: #fff;
+	margin-top: 25px;
+	text-align: center;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 15px;
+}
+
+a.quote-source {
+	font-style:normal;
+	font-size:12px;
+	text-decoratio:none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.clock-item {
+		margin-bottom: 30px;		
+	}
+}
+
+@media (max-width: 767px) {
+	.clock-item {
+		margin: 0px 30px 30px 30px;
+	}
+}

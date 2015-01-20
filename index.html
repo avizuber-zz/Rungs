@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/backgrounds.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<title>Rungs Beta</title>
+</head>
+
+<body id="homepage" onload="_cntDown=setInterval('ShowTimes2()',1000)">
+	<div class="overlay"></div>
+
+	<div class="countdown countdown-container container">
+		<div class="row">
+			<div class="col-md-12 header">
+				<h1>Hit your goal, <strong>just for today</strong>.</h1>
+				<h3>You can do this. There isn`t all that much time left in the day.</h3>
+			</div>
+		</div>
+		<div class="clock row">
+
+			<div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-4">
+				<div class="wrap">
+					<div class="inner">
+						<div id="canvas-hours" class="clock-canvas"></div>
+
+						<div class="text">
+							<p class="val" id="hours">0</p>
+							<p class="type-hours type-time">HOURS</p>
+						</div><!-- /.text -->
+					</div><!-- /.inner -->
+				</div><!-- /.wrap -->
+			</div><!-- /.clock-item -->
+
+			<div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-4">
+				<div class="wrap">
+					<div class="inner">
+						<div id="canvas-minutes" class="clock-canvas"></div>
+
+						<div class="text">
+							<p class="val" id="minutes">0</p>
+							<p class="type-minutes type-time">MINUTES</p>
+						</div><!-- /.text -->
+					</div><!-- /.inner -->
+				</div><!-- /.wrap -->
+			</div><!-- /.clock-item -->
+
+			<div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-4">
+				<div class="wrap">
+					<div class="inner">
+						<div id="canvas-seconds" class="clock-canvas"></div>
+
+						<div class="text">
+							<p class="val" id="seconds">0</p>
+							<p class="type-seconds type-time">SECONDS</p>
+						</div><!-- /.text -->
+					</div><!-- /.inner -->
+				</div><!-- /.wrap -->
+			</div><!-- /.clock-item -->
+		</div><!-- /.clock -->
+		<div class="row">
+			<div class="col-md-12 quote">
+				<div id="quote"></div>
+			</div>
+		</div>
+	</div><!-- /.countdown-wrapper -->
+
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/kinetic.js"></script>
+	<script type="text/javascript" src="js/jquery.final-countdown.js"></script>
+	<script type="text/javascript" src="js/quotes.js"></script>
+<!--
+<script type="text/javascript">
+$('.countdown').final_countdown({
+'start': 13,
+'end': 17,
+'now': 13
+});
+</script> -->
+<script type="text/javascript">
+
+function ShowTimes2() {
+	var now = new Date();
+	var hrs = 23-now.getHours();
+	var mins = 59-now.getMinutes();
+	var secs = 59-now.getSeconds();
+	var ends = hrs + mins + secs;
+	var str = '';
+	str += '<b><span style="color:#FFFFFF;font-family:Trebuchet MS,arial;font-size:26px;line-height:50px;">'+hrs+' Hours '+mins+' Minutes '+secs+' Seconds</span></b>';
+	document.getElementById('minutes').innerHTML = mins;
+	document.getElementById('seconds').innerHTML = secs;
+	document.getElementById('hours').innerHTML = hrs;
+}
+var _cntDown;
+function StopTimes() {
+	clearInterval(_cntDown);
+}
+
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58067851-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

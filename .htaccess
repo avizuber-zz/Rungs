@@ -1,0 +1,10 @@
+SetEnvIfNoCase Referer BlackHatWorth.com spam=yes
+SetEnvIfNoCase Referer http://blackhatworth.com/marketing/lounge/730430-apple-com-analytics-referral-traffic.html.com spam=yes
+SetEnvIfNoCase User-Agent blackhatworth.com spam=yes
+SetEnvIfNoCase User-Agent blackhatworth.com/marketing/lounge/730430-apple-com-analytics-referral-traffic.html spam=yes
+Order allow,deny
+Deny from 78.110.60.230 
+Deny from 193.227.240.37 
+Deny from 193.227.240.38 
+Allow from all
+Deny from env=spam
