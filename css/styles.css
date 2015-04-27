@@ -11,6 +11,7 @@ body {
 	background:none;
 	background:transparent;
 	font-family: 'Raleway', 'Arial', sans-serif;
+	padding-bottom:40px;
 }
 
 .overlay {
@@ -77,6 +78,32 @@ a.quote-source {
 	font-style:normal;
 	font-size:12px;
 	text-decoratio:none;
+}
+
+.footer {
+	z-index: 3;
+	position: fixed;
+	bottom:0px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.41);
+	padding: 5px;
+	color: #717171;
+	height:40px;
+	line-height:2.5;
+	font-size:12px;
+}
+.footer ul {
+	padding:0px;
+	list-style:none;
+}
+.footer ul li {
+	float:left;
+	padding:0px;
+	list-style:none;
+}
+
+.red {
+	color:#CF3131;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
